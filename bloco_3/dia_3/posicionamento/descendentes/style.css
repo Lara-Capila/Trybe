@@ -21,3 +21,13 @@ h1 em {
     border: 1px solid black;
     padding: 5px;
 }
+
+/*3 - Faça todas as li's terem 20px de tamanho de fonte e, para todo texto em itálico dentro de alguma li, utilize a propriedade font-weight para deixá-lo negrito.*/
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
