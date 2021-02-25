@@ -23,7 +23,10 @@ h3 {
 #head {
     text-align: center;
     background-color: #5A798C;
-    padding: 5px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 #navigation a {
@@ -35,4 +38,22 @@ h3 {
 img {
     width: 350px;
     border: solid 4px #DF6F26;
+}
+
+#first-container {
+    display: flex;
+    text-align: justify;
+    width: 60%;
+}
+
+#first-image {
+    padding-right: 20px;
+}
+
+#first-paragraph {
+    padding-right: 20px;
+}
+
+#about {
+    padding-top: 20px;
 }
