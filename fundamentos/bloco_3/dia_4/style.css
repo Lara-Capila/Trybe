@@ -94,7 +94,7 @@ table, th, td{
     margin-right: 30px;
 }
 
-#incredible-eyes {
+#incredible-eyes, #punch {
     padding-left: 15px;
 }
 
@@ -107,4 +107,15 @@ table, th, td{
 #image-eyes {
     width: 900px;
     margin-left: 200px;
+}
+
+#image-punch {
+    margin-left: 15px;
+    width: 500px;
+}
+
+#punch-paragraph p{
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 20px;
 }
