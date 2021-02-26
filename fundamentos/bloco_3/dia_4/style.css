@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Barlow', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     background-color: #ffffca;
     margin: 0;
 }
@@ -72,12 +72,20 @@ img {
     padding-top: 20px;
 }
 
+#title-about {
+    padding-left: 15px;
+}
+
 table, th, td{
    border: solid 1px gray;
    width: 300px;
    text-align: center;
    margin: 5px;
    padding: 5px;
+}
+
+table {
+    margin-right: 15px;
 }
 
 #classification-title {
@@ -118,4 +126,27 @@ table, th, td{
     text-align: justify;
     margin-left: 15px;
     margin-right: 20px;
+}
+
+#video {
+   margin: 0 auto;
+   display: block;
+   padding-left: 400px;
+}
+
+#bibliography {
+    margin-left: 15px;
+}
+
+#bibliography a {
+    color: black;
+}
+
+#contact {
+    background-color: #b92b27;
+    text-align: center;
+}
+
+#contact a {
+    color: black;
 }
