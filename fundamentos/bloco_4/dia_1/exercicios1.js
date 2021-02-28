@@ -60,3 +60,36 @@ if (soma == 180) {
 } else {
     console.log("Erro: ângulo inválido");
 }
+
+// 6.Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+
+let peca = "Rainha";
+
+switch (peca.toLowerCase()) {
+    case "rei":
+        console.log("Horizontal, Vertical e Diagonal uma casa por vez");
+        break;
+    
+    case "rainha":
+        console.log("Horizontal, Vertical e Diagonal sem pular outras peças");
+        break;
+
+    case "bispo":
+        console.log("Diagonal");
+        break;
+
+    case "cavalo":
+        console.log("Duas casas no sentido horizontal e uma na vertical");
+        break;
+
+    case "torre":
+        console.log("Vertical e Horizontal");
+        break;
+
+    case "peão":
+        console.log("Somente para frente");
+        break;
+    
+    default:
+        console.log("Peça inválida");
+}
