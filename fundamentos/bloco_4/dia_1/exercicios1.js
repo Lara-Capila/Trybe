@@ -31,3 +31,14 @@ if (number3 > number4 && number3 > number5) {
 } else {
     console.log("O maior número é: " + number5)
 }
+
+// 4.Faça um programa que, dado um valor definido numa variável, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
+// let parOuImpar = "21";
+
+if (parOuImpar > 0) {
+    console.log('positive')
+} else if (parOuImpar < 0) {
+    console.log('negative')
+} else {
+    console.log('zero')
+}
