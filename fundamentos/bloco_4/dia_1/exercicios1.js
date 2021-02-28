@@ -42,3 +42,21 @@ if (parOuImpar > 0) {
 } else {
     console.log('zero')
 }
+
+// 5. Faça um programa que defina três variáveis com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
+
+let angulo1 = "60";
+let angulo2 = "50";
+let angulo3 = "60";
+let soma = angulo1 + angulo2 + angulo3;
+let par = angulo1 > 0 && angulo2 > 0 && angulo3;
+
+if(par){
+if (soma == 180) {
+    console.log('true');
+} else {
+    console.log('false');
+};
+} else {
+    console.log("Erro: ângulo inválido");
+}
