@@ -86,3 +86,26 @@ for (let posicao = 0; posicao < numbers.length; posicao++) {
 }
 
 console.log(minNumber);
+
+// 8. Utilizando for , crie uma array que vá de 1 até 25 e imprima o resultado;
+
+let array = [];
+
+for (let ind = 1; ind <= 25; ind += 1) {
+    array.push(ind);
+}
+
+console.log(array);
+
+// 9. Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 .
+
+let array = [
+    1,  2,  3,  4,  5,  6,  7,  8,
+    9, 10, 11, 12, 13, 14, 15, 16,
+   17, 18, 19, 20, 21, 22, 23, 24,
+   25
+ ];
+
+for (let ind = 1; ind <= 25; ind += 1) {
+    console.log(array[ind]) / 2;
+}
