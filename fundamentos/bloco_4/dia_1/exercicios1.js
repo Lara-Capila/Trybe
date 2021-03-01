@@ -161,3 +161,16 @@ if (firstNumb % 2 === 0 || secondNumb % 2 === 0 || thirdNumber % 2 === 0) {
 } else {
     console.log(false);
 }
+
+// 9.Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .
+// Bonus: use somente um if .
+
+let firstNumb = 57;
+let secondNumb = 31;
+let thirdNumber = 25;
+
+if (firstNumb % 2 !== 0 || secondNumb % 2 !== 0 || thirdNumber % 2 !== 0) {
+    console.log(true);
+} else {
+    console.log(false);
+}
