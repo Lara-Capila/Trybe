@@ -29,3 +29,19 @@ function verificaIndice(array){
     return array.indexOf(n)
 }
 console.log(verificaIndice([1, 2, 3, 4,]))
+
+// 3. Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+
+function verificaIndiceInteiros(inteiros){
+    let n = [0];
+    for(let i in inteiros){
+      if(n > inteiros[i]){
+          n = inteiros[i];
+      }else {
+          n = n;
+      }
+    }
+    return inteiros.indexOf(n)
+}
+console.log(verificaIndiceInteiros([1, 2, 3, 4, -5]))
+
