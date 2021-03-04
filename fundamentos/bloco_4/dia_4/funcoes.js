@@ -18,11 +18,14 @@ console.log(verificaPalindromo("desenvolvimento"));
 // 2. Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
 
 function verificaIndice(array){
-    let n = [];
-    for(let i = 0; array <= i; i++){
-       n = Math.max.apply([null, array])
+    let n = [0];
+    for(let i in array){
+      if(n < array[i]){
+          n = array[i];
+      }else {
+          n = n;
+      }
     }
-    // return Math.max.apply(null, array)
+    return array.indexOf(n)
 }
-
 console.log(verificaIndice([1, 2, 3, 4,]))
