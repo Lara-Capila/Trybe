@@ -45,3 +45,15 @@ function verificaIndiceInteiros(inteiros){
 }
 console.log(verificaIndiceInteiros([1, 2, 3, 4, -5]))
 
+// 4. Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+
+function maiorNome(nomes){
+    let name = [0];
+    for(let i in nomes){
+        if(name.length < nomes[i].length){
+            name = nomes[i];
+        }
+    }
+    return name;
+}
+console.log(maiorNome(['Lara', 'Roberta', 'Josefina']))
