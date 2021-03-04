@@ -57,3 +57,16 @@ function maiorNome(nomes){
     return name;
 }
 console.log(maiorNome(['Lara', 'Roberta', 'Josefina']))
+
+// 5. Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+
+// 6. Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N.
+
+function somaNumeros(numeros) {
+    let total = 0;
+    for (let index = 1; index <= numeros; index++) {
+      total = total + index;
+    }
+    return total;
+  }
+  console.log(somaNumeros(7)); 
