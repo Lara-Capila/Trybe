@@ -82,8 +82,17 @@ paragraphUpperCase();
 //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 
 function paragraphs(){
-    let paragrafos = document.getElementsByTagName('p')
+    let paragrafos = document.querySelectorAll('p');
+    for(index of paragrafos){
+      console.log(index.innerHTML);
+    }
+    // ou assim:
+    // for (let i = 0; i < paragrafos.length; i++){
+    //   console.log(paragrafos[i].innerHTML);
+    // }
 }
+paragraphs();
+
 
     </script>
   </body>
