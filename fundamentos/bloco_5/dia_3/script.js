@@ -14,11 +14,11 @@ function createDaysOfTheWeek() {
   createDaysOfTheWeek();
   
   // Escreva seu código abaixo.
-  let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
-
-  function criaDias() {
+//   Exercício - 1
+let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+function criaDias() {
     let listaDias = document.querySelector('#days');
-    
+
     for (let index = 0; index < dezDaysList.length; index += 1) {
         let dias = dezDaysList[index];
         let itemLista = document.createElement('li');
@@ -45,16 +45,51 @@ function createDaysOfTheWeek() {
                 listaDias.appendChild(itemLista);
         }
     };
-  };
-  criaDias();
+};
+criaDias();
 
-  function criaBotão(nome) {
+// Execício - 2
+
+function criaBotãoFeriados(nome) {
     let container = document.querySelector('.buttons-container');
     let botao = document.createElement('button');
     let idbotao = 'btn-holiday';
-    
+
     botao.innerHTML = nome;
     botao.id = idbotao;
     container.appendChild(botao);
-  }
-  criaBotão('Feriados');
+}
+criaBotãoFeriados('Feriados');
+
+// Execício - 3
+
+function mudaCorFeriados() {
+    let corClick = 'green';
+    let clickCor = 'rgb(238,238,238)';
+    let pegaIdBotao = document.querySelector('#btn-holiday');
+    let pegaFeriados = document.querySelectorAll('.holiday');
+
+    pegaIdBotao.addEventListener('click', function(){
+        for (let index = 0; index < pegaFeriados.length; index += 1){
+            if (pegaFeriados[index].style.backgroundColor == corClick) {
+                pegaFeriados[index].style.backgroundColor = clickCor;
+            } else {
+                pegaFeriados[index].style.backgroundColor = corClick;
+            }
+        }
+    })
+};
+mudaCorFeriados();
+
+// Execício - 4
+
+function criaBotãoSexta(nome) {
+    let container = document.querySelector('.buttons-container');
+    let botao = document.createElement('button');
+    let idbotao = 'btn-friday';
+
+    botao.innerHTML = nome;
+    botao.id = idbotao;
+    container.appendChild(botao);
+}
+criaBotãoSexta('Sexta-Feira');
