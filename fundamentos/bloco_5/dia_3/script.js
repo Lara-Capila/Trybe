@@ -152,3 +152,26 @@ function dayMouseOver() {
   
   dayMouseOver();
   dayMouseOut();
+
+//   Exercício - 7
+
+function tarefa(string) {
+    let container = document.querySelector('.my-tasks');
+    let criaSpan = document. createElement('span');
+
+    criaSpan.innerHTML = string;
+    container.appendChild(criaSpan);
+}
+tarefa('Fazer Atividades');
+
+// Exercício - 8
+
+function legendaCor (cor) {
+    let container = document.querySelector('.my-tasks');
+    let criaDiv = document.createElement('div');
+
+    criaDiv.className = 'task';
+    criaDiv.style.backgroundColor = cor;
+    container.appendChild(criaDiv);
+}
+legendaCor('purple');
