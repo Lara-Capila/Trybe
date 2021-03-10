@@ -93,3 +93,41 @@ function criaBotãoSexta(nome) {
     container.appendChild(botao);
 }
 criaBotãoSexta('Sexta-Feira');
+
+//  Exercício - 5
+
+function mudaTextoSexta(arraySexta) {
+    let newText = 'Sextou 🍷';
+    let pegaIdBotao = document.querySelector('#btn-friday');
+    let pegaSextas = document.querySelectorAll('.friday');
+
+    pegaIdBotao.addEventListener('click', function() {
+        for (let index = 0; index < pegaSextas.length; index += 1){
+            if (pegaSextas[index].innerHTML !== newText) {
+                pegaSextas[index].innerHTML = newText;
+            } else {
+                pegaSextas[index].innerHTML = arraySexta[index];
+            }
+        };
+    })
+};
+let dezFridays = [ 4, 11, 18, 25 ];
+mudaTextoSexta(dezFridays);
+
+// Exercício - 6
+let pegaDias = document.querySelectorAll('.day');
+function passaMouse(evt) {
+    // evt.target.style.fontSize = '30px';
+    // evt.target.style.fontWeght = '600';
+    evt.target.style.backgroundColor = 'green'
+    console.log('oiiiiii');
+};
+pegaDias.addEventListener('mouseover', passaMouse);
+
+function tiraMouse(evt) {
+    // evt.target.style.fontWeght = '200';
+    // evt.target.style.fontsize = '10px';
+    evt.target.style.backgroundColor = 'yellow'
+    console.log('oiiiiii2');
+};
+pegaDias.addEventListener('mouseout', tiraMouse); 
