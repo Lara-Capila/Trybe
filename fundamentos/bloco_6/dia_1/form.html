@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Forms - 6.1</title>
 </head>
 <body>
@@ -12,40 +13,64 @@
     <p>Preencha os dados abaixo com atenção!</p>
   </header>
   <form id="curriculum-form">
+<!-- Parte 1 -->
     <div>
       <fieldset>
-        <div>
+        <div class="container-data">
           <label for="name">Nome: </label>
           <input type="text" name="name" id="name" maxlength="40" required>
         </div>
-        <div>
+        <div class="container-data">
          <label for="email">E-mail: </label>
          <input type="text" name="email" id="email" maxlength="50" required> 
         </div>
-        <div>
+        <div class="container-data">
           <label for="cpf">CPF: </label>
           <input type="text" name="cpf" id="cpf" maxlength="11" required>
         </div>
-        <div>
+        <div class="container-data">
           <label for="address">Endereço: </label>
           <input type="text" name="address" id="address" maxlength="200" required>
         </div>
-        <div>
+        <div class="container-data">
           <label for="city">Cidade: </label>
           <input type="text" name="city" id=city maxlength="28" required>
         </div>
-        <div>
+        <div class="container-data">
           <label for="">Estado: </label>
           <select name="state" id="state" value="" required></select>
         </div>
-        <div>
-          <label for="">Tipo de imóvel: </label>
+        <div class="container-data">
+          <label for="house-apartment">Tipo de Imóvel: </label>
           <input type="radio" name="house-apartment" id="house" required> <span>Casa</span>
           <input type="radio" name="house-apartment" id="apartment" required> <span>Apartamento</span>
         </div>
       </fieldset>
     </div>
-<!-- Parte1 -->
+<!-- Parte 1 -->
+<!-- Parte 2 -->
+<div>
+  <fieldset>
+    <div>
+      <label for="abstract">Resumo do Currículo: </label>
+      <textarea name="abstract" id="abstract" cols="50" rows="10" maxlength="1000" required></textarea>
+    </div>
+    <div>
+      <label for="office">Cargo: </label>
+      <input type="text" name="office" id="office" maxlength="40" required>
+    </div>
+    <div>
+      <label for="description">Descrição do Cargo: </label>
+      <input type="text" name="description" id="description" maxlength="500" required>
+    </div>
+    <div>
+      <label for="date">Data de Início: </label>
+      <input type="text" name="date" id="date" maxlength="10" value="" required>
+    </div>
+  </fieldset>
+  <button id="send-btn" type="button">Enviar Formulário</button>
+  <button id="clear-btn" type="button">Limpar Formulário</button>
+</div>
   </form>
 </body>
 </html>
