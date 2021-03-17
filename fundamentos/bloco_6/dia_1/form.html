@@ -51,26 +51,29 @@
 <!-- Parte 2 -->
 <div>
   <fieldset>
-    <div>
+    <div class="container-data">
       <label for="abstract">Resumo do Currículo: </label>
       <textarea name="abstract" id="abstract" cols="50" rows="10" maxlength="1000" required></textarea>
     </div>
-    <div>
+    <div class="container-data">
       <label for="office">Cargo: </label>
       <input type="text" name="office" id="office" maxlength="40" required>
     </div>
-    <div>
+    <div class="container-data">
       <label for="description">Descrição do Cargo: </label>
       <input type="text" name="description" id="description" maxlength="500" required>
     </div>
-    <div>
+    <div class="container-data">
       <label for="date">Data de Início: </label>
-      <input type="text" name="date" id="date" maxlength="10" value="" required>
+      <input type="date" name="date" id="date" maxlength="10" value="" required>
     </div>
   </fieldset>
-  <button id="send-btn" type="button">Enviar Formulário</button>
-  <button id="clear-btn" type="button">Limpar Formulário</button>
+  <div id="btn">
+    <button id="send-btn" type="button">Enviar Formulário</button>
+    <button id="clear-btn" type="button">Limpar Formulário</button>
+  </div>
 </div>
   </form>
+  <script src="/script.js"></script>
 </body>
 </html>
