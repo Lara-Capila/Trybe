@@ -11,3 +11,13 @@ function createOptionsStatesBr () {
         pai.appendChild(createOption).innerText = statesOfBr[index];
     }
 }
+// Validações
+
+function interruptsBtn () {
+    let btnSubmit = document.getElementById('send-btn');
+
+    btnSubmit.addEventListener('click', function(event){
+        alert('Formulário enviado com sucesso. Boa sorte!')
+        event.preventDefault()
+    });
+}
