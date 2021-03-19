@@ -5,87 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
     <link rel="stylesheet" href="/style.css">
     <title>Forms - 6.1</title>
 </head>
 <body>
-  <header class="form-header">
-    <h1>Formulário para Currículo</h1>
-    <p>Preencha os dados abaixo com atenção!</p>
-  </header>
-<!-- Parte 1 -->
-<form class="row g-3" id="curriculum-form">
-  <fieldset class="form-group">
-    <div class="col-md-6">
-      <label class="form-label" for="name">Nome: </label>
-      <input class="form-control" type="text" name="name" id="name" maxlength="40" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required>
+  <div class="container">
+    <div class="row">
+      <header class="form-header">
+        <h1>Formulário para Currículo</h1>
+        <p>Preencha os dados abaixo com atenção!</p>
+      </header>
     </div>
+  <!-- Parte 1 -->
+  <div class="row">
+    <form class="g-3" id="curriculum-form">
+      <p>⚠️ Os campos marcados com asterisco (*) são <em>obrigatórios</em>. </p>
+      <fieldset class="form-group">
+        <div class="col-md-12">
+         <label class="form-label" for="name">Nome<strong>*</strong> : </label>
+          <input class="form-control" data-validate-field="name" type="text" name="name" id="name" maxlength="40" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required>
+        </div>
 
-    <div class="col-md-6">
-      <label class="form-label" for="email">E-mail: </label>
-      <input class="form-control" type="text" name="email" id="email" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> 
-    </div>
+        <div class="col-md">
+          <label class="form-label" for="email">E-mail<strong>*</strong> : </label>
+          <input class="form-control" data-validate-field="email" type="text" name="email" id="email" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> 
+        </div>
 
-    <div class="col-md-6">
-      <label class="form-label" for="cpf">CPF: </label>
-      <input class="form-control" type="text" name="cpf" id="cpf" maxlength="11" pattern="[0-9]{3}\.\[0-9]{3}\.\[0-9]{3}-" required>
-    </div>
+        <div class="col-md">
+          <label class="form-label" for="cpf">CPF<strong>*</strong> : </label>
+          <input class="form-control" data-validate-field="cpf" type="text" name="cpf" id="cpf" maxlength="11" pattern="[0-9]{3}\.\[0-9]{3}\.\[0-9]{3}-" required>
+        </div>
 
-    <div class="col-md-6">
-      <label class="form-label" for="address">Endereço: </label>
-      <input class="form-control" type="text" name="address" id="address" maxlength="200" required>
-    </div>
+        <div class="col-md">
+          <label class="form-label" for="address">Endereço<strong>*</strong> : </label>
+          <input class="form-control" data-validate-field="address" type="text" name="address" id="address" maxlength="200" required>
+        </div>
 
-    <div class="col-md-6">
-      <label class="form-label" for="city">Cidade: </label>
-      <input class="form-control" type="text" name="city" id=city maxlength="28" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required>
-    </div>
+        <div class="col-md">
+          <label class="form-label" for="city">Cidade<strong>*</strong> : </label>
+          <input class="form-control" data-validate-field="city" type="text" name="city" id=city maxlength="28" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required>
+        </div>
 
-    <div class="col-md-2">
-      <label for="">Estado: </label>
-      <select class="form-select" name="state" id="state" value="" required></select>
-    </div>
+        <div class="col-md">
+          <label for="">Estado<strong>*</strong> : </label>
+          <select class="form-select" data-validate-field="state" name="state" id="state" value="" required></select>
+        </div>
 
-    <div class="form-group">
-      <label class="form-check-label form-label" for="house-apartment">Tipo de Imóvel: </label>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="house-apartment" id="house" required checked> <span>Casa</span>
+        <div class="form-group">
+          <label class="form-check-label form-label" for="house-apartment">Tipo de Imóvel<strong>*</strong> : </label>
+          <div class="form-check">
+            <input class="form-check-input" data-validate-field="radio" type="radio" name="house-apartment" id="house" required checked> <span>Casa</span>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input" data-validate-field="radio" type="radio" name="house-apartment" id="apartment" required> <span>Apartamento</span>
+          </div>
+          </div>
+        </fieldset>
+    <!-- Parte 1 -->
+    <!-- Parte 2 -->
+
+      <fieldset class="form-group">
+        <div class="col-md">
+          <label class="form-label" for="abstract">Resumo do Currículo<strong>*</strong> : </label>
+          <textarea class="form-control" data-validate-field="abstract" name="abstract" id="abstract" cols="50" rows="10" maxlength="1000" required></textarea>
+        </div>
+
+        <div class="col-md">
+          <label class="form-label" for="office">Cargo<strong>*</strong> : </label>
+          <input class="form-control" data-validate-field="office" type="text" name="office" id="office" maxlength="40" required>
+        </div>
+
+        <div class="col-md">
+          <label class="form-label" for="description">Descrição do Cargo<strong>*</strong> : </label>
+          <input class="form-control" data-validate-field="description" type="text" name="description" id="description" maxlength="500" required>
+        </div>
+
+        <div class="col-md">
+          <label class="form-label" for="datepicker">Data de Início<strong>*</strong> : </label>
+          <input class="form-control" data-validate-field="date" type="text" name="date" id="datepicker" maxlength="10" value="" required>
+        </div>
+
+      </fieldset>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-success btn-lg btn-primary" id="send-btn" type="submit" onclick="interruptsBtn()">Enviar Formulário</button>
+        <button class="btn btn-danger btn-lg" id="clear-btn" type="button" onclick="eventClearBtn()">Limpar Formulário</button>
       </div>
-      <div class="form-group">
-        <input class="form-check-input" type="radio" name="house-apartment" id="apartment" required> <span>Apartamento</span>
-      </div>
-      </div>
-    </fieldset>
-<!-- Parte 1 -->
-<!-- Parte 2 -->
-
-  <fieldset class="form-group">
-    <div class="col-md-6">
-      <label class="form-label" for="abstract">Resumo do Currículo: </label>
-      <textarea class="form-control" name="abstract" id="abstract" cols="50" rows="10" maxlength="1000" required></textarea>
-    </div>
-
-    <div class="col-md-6">
-      <label class="form-label" for="office">Cargo: </label>
-      <input class="form-control" type="text" name="office" id="office" maxlength="40" required>
-    </div>
-
-    <div class="col-md-6">
-      <label class="form-label" for="description">Descrição do Cargo: </label>
-      <input class="form-control" type="text" name="description" id="description" maxlength="500" required>
-    </div>
-
-    <div class="col-md-2">
-      <label class="form-label" for="date">Data de Início: </label>
-      <input class="form-control" type="date" name="date" id="date" maxlength="10" value="" required>
-    </div>
-
-  </fieldset>
-  <div class="d-grid gap-2 col-6 mx-auto">
-    <button class="btn btn-success btn-lg btn-primary" id="send-btn" type="submit" onclick="interruptsBtn()">Enviar Formulário</button>
-    <button class="btn btn-danger btn-lg" id="clear-btn" type="button" onclick="eventClearBtn()">Limpar Formulário</button>
-  </div>
-</form>
-  <script src="/scriptd2.js"></script>
+  </form>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+<script src="/scriptd2.js"></script>
 </body>
 </html>
