@@ -1,6 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Slabo+27px&display=swap');
+
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+body {
+  background-color: cornsilk;
+  font-size: 16px;
+  font-family: 'Slabo 27px', serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: darkviolet;
+  align-items: center;
+}
+
+.paragraph-header {
+  margin-left: 5%;
+  font-size: 30px;
+}
+
+.container-navigation {
+  margin-right: 5%;
+}
+
+.unorder-list-nav {
+  display: flex;
+}
+
+.nav-item {
+  display: flex;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.container-aside {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aside-item {
+  list-style: none;
+  margin: 10px;
+}
+
+.unorder-list-aside-one{
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  text-align: justify;
+
+}
+
+.unorder-list-aside-two {
+  padding-left: 10px;
+}
+
+.aside-two-item {
+  margin: 10px;
+}
+
+.main-content {
+  text-align: justify;
+  margin: 5%;
+}
+
+.title-chapter{
+  text-align: center;
+  margin: 30px;
+}
+
+.container-footer {
+  display: flex;
+  background-color: darkviolet;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paragraphs-footer {
+  text-align: center;
+  width: 50%;
 }
