@@ -50,10 +50,10 @@ header {
 
 .aside-item {
   list-style: none;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
-.unorder-list-aside-one{
+.unorder-list-aside-one {
   padding-left: 0px;
   display: flex;
   flex-wrap: wrap;
@@ -94,4 +94,24 @@ footer {
 .paragraphs-footer {
   text-align: center;
   width: 50%;
+}
+
+/* RESPONSIVE 768PX */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .aside-one {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .aside-item {
+    margin: 7px;
+    margin-top: 0px;
+  }
 }
