@@ -20,7 +20,7 @@ h1, h2, h3 {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: darkviolet;
+  background-color: #9400d3;
   align-items: center;
 }
 
@@ -46,11 +46,17 @@ header {
 .container-aside {
   display: flex;
   justify-content: space-evenly;
+  /* width: 100%; */
+}
+
+.aside-one {
+  float: left;
+  margin: 20px;
 }
 
 .aside-item {
   list-style: none;
-  /* margin: 10px; */
+  margin: 10px;
 }
 
 .unorder-list-aside-one {
@@ -66,6 +72,12 @@ header {
   padding-left: 10px;
 }
 
+.aside-two {
+  float: right;
+  margin-top: 15px;
+  width: 40%;
+}
+
 .aside-two-item {
   margin: 10px;
 }
@@ -78,6 +90,7 @@ header {
 .title-chapter{
   text-align: center;
   margin: 30px;
+
 }
 
 .container-footer {
@@ -91,6 +104,10 @@ footer {
   align-items: center;
 }
 
+.title-footer {
+  margin: 5px 0 0 0 ;
+}
+
 .paragraphs-footer {
   text-align: center;
   width: 50%;
@@ -100,6 +117,17 @@ footer {
 @media screen and (max-width: 768px) {
   body {
     font-size: 18px;
+  }
+
+  h2 {
+     padding-bottom: 0px;
+     height: 30px;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   .aside-one {
@@ -114,4 +142,16 @@ footer {
     margin: 7px;
     margin-top: 0px;
   }
+
+  .aside-two {
+    display: flex;
+    flex-wrap: wrap;
+    height: 10%;
+  }
+
+  .paragraphs-footer {
+    
+  }
 }
+
+/* RESPONSIVE 360PX */
