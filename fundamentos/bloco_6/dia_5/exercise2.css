@@ -46,11 +46,10 @@ header {
 .container-aside {
   display: flex;
   justify-content: space-evenly;
-  /* width: 100%; */
+  margin-left: 40px;
 }
 
 .aside-one {
-  float: left;
   margin: 20px;
 }
 
@@ -75,7 +74,7 @@ header {
 .aside-two {
   float: right;
   margin-top: 15px;
-  width: 40%;
+  margin-left: 100px;
 }
 
 .aside-two-item {
@@ -148,10 +147,30 @@ footer {
     flex-wrap: wrap;
     height: 10%;
   }
-
-  .paragraphs-footer {
-    
-  }
 }
 
 /* RESPONSIVE 360PX */
+@media screen and (min-width: 360px) {
+  .paragraph-header {
+    text-align: center;
+  }
+  
+  .container-aside {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aside-two {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .title-footer {
+    text-align: center;
+  }
+
+  .paragraphs-footer {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
