@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Introdução ES6</title>
+</head>
+<body>
+  <div class="container">
+    <span id="click-btn"></span>
+    <button id="btn">Clique aqui!</button>
+  </div>
+</body>
+<script>
+  const getBtn = document.querySelector('#btn');
+  const getSpan = document.querySelector('#click-btn');
+  let count = 0;
+
+  let clicksTimes = () => {
+    getSpan.innerHTML = `Você clicou ${count += 1} vezes!`
+  }
+  getBtn.addEventListener('click', clicksTimes);
+</script>
+</html>
