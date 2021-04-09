@@ -45,5 +45,3 @@ const order = {
     // Adicione abaixo as informações necessárias.
   
   }
-  
-  orderModifier(order);
