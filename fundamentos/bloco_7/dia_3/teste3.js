@@ -12,6 +12,7 @@ function myRemoveWithoutCopy(arr, item) {
   return arr;
 }
 
+assert.strictEqual(typeof myRemoveWithoutCopy, 'function');
 assert.strictEqual(typeof myRemoveWithoutCopy, 'function', `Erro: não é uma função!`);
 assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 4]);
 const array = [1,2,3,5];
